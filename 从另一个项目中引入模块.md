@@ -1,0 +1,14 @@
+# -python
+程序笔记
+从另外一个项目中引入 模块，手动添加路径
+
+import sys
+#手动添加路径
+sys.path.append('D:\\Program Files\\JetBrains\\pycharmproject\\mypy01\\aaa')
+#查看路径
+list1 = sys.path
+for path in list1:
+    print(path)
+#引入模块
+import MyMath
+print(MyMath.sum(2,3))
